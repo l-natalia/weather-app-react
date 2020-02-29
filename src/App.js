@@ -4,7 +4,6 @@ import Weather from './components/Weather';
 
 function App() {
   const [weather, setWeather] = useState('');
-  const [text, setWeather] = useState('');
 
   const getData = async () => {
     const api_call = await fetch(
