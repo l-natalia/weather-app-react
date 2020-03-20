@@ -7,7 +7,7 @@ function App() {
 
   const getData = async () => {
     const api_call = await fetch(
-      `https://api.nasa.gov/planetary/apod?api_key=AGqbhrI9UQKaHYbIzmxv0DRMdvQpgdesAbGUPJr8`,
+      `//api.nasa.gov/insight_weather/?api_key=AGqbhrI9UQKaHYbIzmxv0DRMdvQpgdesAbGUPJr8&feedtype=json&ver=1.0`,
     );
     const data = await api_call.json();
     setWeather(data);
